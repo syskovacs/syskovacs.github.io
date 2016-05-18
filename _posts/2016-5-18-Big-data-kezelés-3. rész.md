@@ -7,4 +7,5 @@ A rendszer kiépítéséhez két virtuális gép állt rendelkezésre KVM alapon
 
 {: .center}
 ![image](http://i.imgur.com/dpor7Dy.png "Rendszer részletek")
+
 A kiépítés első lépéseként a gépeink közötti SSH hozzáféréseket kellett kialakítani, majd a CDH telepítő segítségével megkezdeni a rendszer felépítését. A telepítés után kezdődött meg a Docker klaszter kiépítése a fent nevezett két gépen, amely a Rancher használatával jött létre. Ez a későbbiekben hasznos segédeszköz lehet, grafikus felülete nagyban megkönnyítheti a későbbi menedzsment feladatok elvégzését. A CDH modulok kiválasztása során figyelmet fordítottam a gépek közti elosztásukra, a célszerűség elvét követve némelyek mindkét gépre, mások csak az egyik gépre kerültek beállításra. A Flume, Hive, Hue és Impala kiegészítő modulok kerültek beállításra a szerveren, mindegyik az alapértelmezett portján kommunikál. 
